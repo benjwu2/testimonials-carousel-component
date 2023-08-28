@@ -97,6 +97,11 @@
   padding: 5px;
   box-shadow: 2px 2px 5px #aaa;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.sticker:hover {
+  animation: inflate-and-shake 0.5s ease-in-out 0s;
 }
 
 /* .testimonial:nth-of-type(odd) .testimonial__attribution .sticker {
@@ -155,5 +160,32 @@
 
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes inflate-and-shake {
+  0% {
+    transform: scale(1);
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: scale(1.1);
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: scale(1.5);
+    transform: rotate(-10deg);
+  }
+
+  75% {
+    transform: scale(1.1);
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: scale(1);
+    transform: rotate(0);
   }
 }
