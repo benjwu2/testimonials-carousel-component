@@ -1,18 +1,21 @@
-.testimonial,
-.testimonials,
-.testimonials__wrapper {
+.testimonials {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.testimonials {
+.testimonials__header {
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.testimonials__wrapper {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
   flex-direction: row;
   align-items: stretch;
-  padding: 10px 37.5px 10px;
+  padding: 10px 37.5px 20px;
   column-gap: 100px;
   width: 610px;
   margin-left: auto;
@@ -22,6 +25,9 @@
 }
 
 .testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   min-width: 550px;
   box-shadow: 2px 2px 5px #aaa;
@@ -53,7 +59,7 @@
 }
 
 .testimonial__nav {
-  width: calc(100% + 70px);
+  width: calc(100% + 50px);
   position: absolute;
   top: 40%;
   display: flex;
@@ -62,19 +68,20 @@
 
 .testimonial__nav-next,
 .testimonial__nav-previous {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 8px;
   animation: pulse 2s linear 0s infinite;
   transition: transform 0.5s linear 0s;
+  box-sizing: content-box;
 }
 
 .testimonial__nav-previous:hover {
-  border-left: solid #ffd500 4px;
+  border-left: solid #35ba59 4px;
 }
 
 .testimonial__nav-next:hover {
-  border-right: solid #ffd500 4px;
+  border-right: solid #35ba59 4px;
 }
 
 .testimonial__nav-previous {
@@ -104,41 +111,13 @@
   animation: inflate-and-shake 0.5s ease-in-out 0s;
 }
 
-/* .testimonial:nth-of-type(odd) .testimonial__attribution .sticker {
-  transform: rotate(12deg);
-}
-
-.testimonial:nth-of-type(even) .testimonial__attribution .sticker {
-  transform: rotate(-12deg);
-} */
-
 .testimonial__text-emphasis {
   line-height: 30px;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 0 8px 0;
-  background-color: #ffd500;
+  background-color: #41dc6a;
   font-size: 25px;
-}
-
-@keyframes slide-in-from-right {
-  0% {
-    transform: translate(100%, 0px);
-  }
-
-  100% {
-    transform: translate(0px, 0px);
-  }
-}
-
-@keyframes slide-in-from-left {
-  0% {
-    transform: translate(-100%, 0px);
-  }
-
-  100% {
-    transform: translate(0px, 0px);
-  }
 }
 
 @keyframes pulse {
@@ -155,7 +134,7 @@
   }
 
   75% {
-    transform: scale(1);
+    transform: scale(1.05);
   }
 
   100% {
