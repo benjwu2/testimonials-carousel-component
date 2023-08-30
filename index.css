@@ -172,6 +172,7 @@
 @media screen and (max-width: 700px) {
   .testimonials__wrapper {
     width: 300px;
+    box-sizing: content-box;
   }
 
   .testimonial {
