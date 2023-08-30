@@ -34,11 +34,6 @@
   scroll-snap-align: center;
 }
 
-.testimonial__image {
-  max-width: 30%;
-  align-self: flex-start;
-}
-
 .testimonial__link {
   text-decoration: none;
 }
