@@ -176,5 +176,6 @@
 
   .testimonial {
     min-width: 240px;
+    box-sizing: content-box;
   }
 }
