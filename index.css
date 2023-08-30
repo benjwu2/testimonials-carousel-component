@@ -16,7 +16,7 @@
   flex-wrap: nowrap;
   overflow-x: auto;
   flex-direction: row;
-  align-items: stretch;
+  align-items: center;
   padding: 10px 37.5px 20px;
   column-gap: 100px;
   /* width = min-width (550px) + padding (30px * 2) */
