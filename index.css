@@ -53,9 +53,8 @@
 }
 
 .testimonial__text {
-  line-height: 12px;
+  line-height: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
 }
 
 .testimonial__text-emphasis {
@@ -63,7 +62,6 @@
   border-bottom-right-radius: 10px;
   padding: 0 8px 0;
   background-color: rgb(252, 230, 152);
-  font-size: 12px;
 }
 
 .testimonial__nav {
@@ -178,5 +176,10 @@
   .testimonial {
     min-width: 240px;
     box-sizing: content-box;
+  }
+
+  .testimonial__text {
+    line-height: 12px;
+    font-size: 12px;
   }
 }
