@@ -44,7 +44,6 @@
   display: flex;
   column-gap: 10px;
   align-items: baseline;
-  flex-shrink: 1;
 }
 
 .testimonial__date {
@@ -189,6 +188,10 @@
   .testimonial {
     min-width: 240px;
     box-sizing: content-box;
+  }
+
+  .testimonial__link {
+    font-size: 18px;
   }
 
   .testimonial__text {
